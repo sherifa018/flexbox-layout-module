@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    
+    .hero{
+        height: 100vh;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: inline-block;
+        list-style-type: none;
+        display: flex;
+        
+      
+    }
+    nav li a{
+        padding: 8px 16px;
+        text-decoration-line: none;
+        color: black;
+    }
+
+    .content{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .content-text h1{ font-size:70px;}
+    .content-text h2{ font-size: 30px;}
+
+    button{
+    padding: 20px;
+    background-color: rgb(68, 92, 21);
+    cursor: pointer;
+    width: 250px;}
+    
+
+    .background{
+    background-image: url(pexels-ifreestock-572487.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+    }
+
+    @media  
+            (max-width: 700px){
+	header{
+		flex-direction: column;		
+	}}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+
+    .our-work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .title{ margin-top: 100px;
+      text-transform: uppercase;}
+
+     .line{
+    height: 3px;
+    background-color: black;
+    width: 100px;
+    margin-bottom: 50px ;
+    }
+
+    .images{
+        width: 80%;margin: auto;
+        display: flex;
+        flex-direction: column;    
+        gap: 15px;
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        overflow: hidden;
+    }
+    .image-container img{
+        height: 300px;
+        object-fit: cover;    
+    }
+
+    .small{
+        flex-basis: 55%;
+    }
+    .larg{
+        flex-basis: 45%;
+    }
+    .features{
+        background-color: rgb(234, 232, 232);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .paras{
+        display: flex;
+        justify-content: space-between;
+         gap: 35px;
+        width: 800px;
+    }
+    .paras .p h2{
+        text-align: center;
+    }
+    
+    form{
+        gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+    .contact-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    #email{
+    width: 400px;
+    padding: 10px;
+}
+#submit{
+    width: 250px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+@media  
+            (max-width: 700px){
+	form, .paras{
+		flex-direction: column;		
+	}}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+
+footer{
+    text-transform: uppercase;
+    background-color: gray;
+    padding: 50px;
+   
+}
+footer a{
+    text-decoration: none;
+}
+footer p{
+    text-align: center;
+}
+
+.foot{
+    width: 100vw;
+    height: 40px;
+    background-color: black;
+}
+
+</style>
+<body>
+    <section class="hero">
+        <div class="background"></div>
+        <header>
+            <h2>Website Logo</h2>
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </nav>
+        </header>
+
+        <div class="content">
+           <div class="content-text">
+                <h1>Responsive Template Page</h1>
+                <h2>FULLSTACK TRAINING COURSE</h2>
+                <button type="button">Download it here</button>
+           </div>
+       </div>
+
+    </section>
+
+    <section class="our-work">
+        <h1 class="title">  some Of Our Work   </h1>
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repudiandae ipsa odit voluptas consequatur qui unde eveniet beatae praesentium, quis, totam ab veniam eius tenetur suscipit dolorem illo obcaecati asperiores?</p>
+
+        <div class="line"></div>
+
+        <div class="images">
+			<div class="image-container">
+			     <img class="small" src="coast.jpg" alt="ph">
+    			 <img class="large"  src="island.jpg" alt="ph">
+			</div>
+			<div class="image-container">
+			     <img class="large" src="balloon.jpg" alt="">
+    			 <img class="small" src="mountain.jpg" alt="">
+	        </div>
+        </div>
+
+        </section>
+
+        <section class="features">
+          <section class="feature-text">
+                <h3 class="title">Content Editing</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                dolor sit amet consectetur adipisicing.
+              </p>
+
+              <div class="line"></div>
+          </section>
+          <div class="paras">
+            <div class="p">
+                <h2>Photohgraphy</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia modi corporis nisi placeat error laborum eveniet iure accusamus libero neque explicabo et vel labore voluptatem id, aliquid similique, eaque totam!</p>
+            </div>
+
+            <div class="p">
+                <h2>web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eaque, ut, nemo ratione quibusdam voluptatem veritatis aspernatur cumque eligendi harum vel vero facilis explicabo animi eos magnam sunt consequatur accusantium?</p>
+            </div>
+
+            <div class="p">
+                <h2>Content Editing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat provident mollitia ipsa. Quia quas adipisci eaque eum minima obcaecati, doloremque, qui, soluta ipsa unde est suscipit eius dicta non nesciunt.</p>
+            </div>
+
+        </div>
+       
+
+        <div="contact">
+          <div class="contact-text">
+                <h2>Join Our Newsletter</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni corporis eius autem dolores amet, repellendus nam minima. Voluptatum sed magnam deleniti alias, exercitationem dolores omnis, voluptate aperiam autem recusandae maiores?</p><br><br>
+                <div class="line"></div>
+        
+          </div>
+            <form>
+                <input id="email" type="email" placeholder="Email">
+                <input id="submit" type="submit" value="Subscribe">
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Made By <a href="">TUTORIALZINE</a>. images courtesy to <a href="">unsplash.</a></p>
+        <p>no attribution required. you can remove this footer.</p>
+    </footer>
+    <div class="foot"></div>
+</body>
+</html>
